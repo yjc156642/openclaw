@@ -38,6 +38,7 @@ function routeGates(state: ChannelIngressState): AccessGraphGate[] {
     allowed: route.effect !== "block-dispatch",
     reasonCode: route.effect === "block-dispatch" ? "route_blocked" : "allowed",
     match: route.match,
+    action: route.action,
   }));
 }
 
